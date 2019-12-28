@@ -213,6 +213,14 @@ $string = substr($string, 0, strrpos($string, ' '));
 return $string."… ";
 }
 
+function only_2_rows_long ($string) {
+    if (strlen($string) < 76){
+        return $string;
+    }
+    $string = substr($string, 0, 270);
+    $string = substr($string, 0, strrpos($string, ' '));
+    return $string."… ";
+}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // lot_sql() - Запрос на показ конкретного лота
 

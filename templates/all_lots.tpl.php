@@ -41,7 +41,7 @@
             <li class="lots__item lot">
                 <div class="lot__image">
                     <a href="/?tab=lot&id=<?=$lots[$key]['id']?>">
-                         <img src="<?=$lots[$key]['image_url']?>" height="260"  alt="<?=$lots[$key]['name']?>">
+                         <img src="<?=$lots[$key]['image_url']?>" height="260"  alt="<?=$lots[$key]['name']?>" title="<?=only_2_rows_long($lots[$key]['description'])?>">
                     </a>
                 </div>
                 <div class="lot__info">
